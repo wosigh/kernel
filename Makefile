@@ -17,7 +17,7 @@ NAME = Arr Matey! A Hairy Bilge Rat!
 MAKEFLAGS += -rR --no-print-directory
 
 # Add custom flags here to avoid conflict with updates
-EXTRAVERSION := $(EXTRAVERSION)-palm
+EXTRAVERSION := $(EXTRAVERSION)-puff
 
 # We are using a recursive build, so we need to do a little thinking
 # to get the ordering right.
