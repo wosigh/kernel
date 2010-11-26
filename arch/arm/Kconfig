@@ -882,6 +882,7 @@ config XIP_PHYS_ADDR
 
 config KEXEC
 	bool "Kexec system call (EXPERIMENTAL)"
+	select ATAGS_PROC
 	depends on EXPERIMENTAL
 	help
 	  kexec is a system call that implements the ability to shutdown your
