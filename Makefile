@@ -1036,6 +1036,8 @@ modules: $(vmlinux-dirs) $(if $(KBUILD_BUILTIN),vmlinux)
 	@echo '  Building modules, stage 2.';
 	$(Q)$(MAKE) -f $(srctree)/scripts/Makefile.modpost
 
+modules.tar: modules
+	tar -cf modules.tar `find . -name "*.ko"`
 
 # Target to prepare building external modules
 PHONY += modules_prepare
